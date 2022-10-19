@@ -1,1 +1,15 @@
-{"image": "cirrusci/flutter:beta", "forwardports": [3000]}
+{
+  "name": "Flutter",
+  "image": "matspfeiffer/flutter",
+  "extensions": ["dart-code.dart-code", "dart-code.flutter"],
+  "runArgs": [
+    "--device",
+    "/dev/kvm",
+    "--device",
+    "/dev/dri:/dev/dri",
+    "-v",
+    "/tmp/.X11-unix:/tmp/.X11-unix",
+    "-e",
+    "DISPLAY"
+  ]
+}
